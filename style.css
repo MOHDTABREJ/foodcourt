@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.navbar {
+    display: flex;
+    background: rgba(1, 6, 20, 0.967);
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+  
+
+}
+
+.navlist {
+    width: 50%;
+    display: flex;
+    margin: 2px;
+}
+
+.logo img {
+    border: 3px solid #00ffe787;
+    border-radius: 50px;
+}
+
+.navlist logo {
+    width: 50%;
+
+}
+
+.navlist li {
+    list-style: none;
+    padding: 26px 36px;
+    margin: 0px 12p;
+}
+
+.navlist li a {
+    width: 50%;
+    text-decoration: none;
+    font-size: 16px;
+    font-family:'Ubuntu', sans-serif;
+    font-weight: bolder;
+    color: white;
+
+}
+
+.rightnav {
+    width: 47%;
+    text-align: right;
+    padding: 11px 17px
+}
+
+.rightnav input {
+    border: solid #a2a2e5bd;
+
+    margin: -4px;
+    margin: 0px 7px;
+    padding: 0px 8pxx;
+}
+
+.rightnav btn-sm {
+    border: solid #bde3df42;
+    border-radius: 6px;
+}
+
+.background {
+    background: rgba(0, 0, 0, 0.7) url(https://source.unsplash.com/900x900/?food,seafood);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
+}
+
+.firstsection {
+    height: 60vh;
+    padding: 22px;
+}
+
+.firsthalf {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px;
+
+}
+
+.secondhalf {
+    width: 30%;
+    text-align: right;
+
+}
+
+.secondhalf img {
+    width: 154%;
+    border: 2px solid white;
+    border-radius: 150px;
+    display: block;
+    margin: auto;
+}
+
+.text-big {
+    font-size: 41px;
+}
+
+.text-small {
+    font: size 18px;
+    ;
+}
+
+.btn {
+    padding: 8px 30px;
+    margin: 7px 4px;
+    border: 2px solid white;
+    border-radius: 20px;
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-family:'Ubuntu', sans-serif;
+    font-size: 20px;
+}
+
+.btn-sm {
+    padding: 1px 4px;
+    vertical-align: middle;
+    font-size: 13px;
+}
+.btn-dark{
+    color: black;
+    border: 2px solid gray;
+}
+
+.section{
+    /* height: 350x; */
+    display: flex;
+   
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    max-width: 80%;
+    padding: 30px 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.paras {
+    padding: 0px 65px;
+}
+
+.imgFluid {
+    max-width: 321px;
+    margin: auto;
+    height: 320px;
+}
+
+.sectionTag {
+    padding: 4px 0px;
+    margin: 4px 0px;
+}
+
+.sectionSubTag {
+    padding: 10px 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section-left {
+    flex-direction: row-reverse;
+
+}
+.thumbnail img{
+    border: 3px solid #01224db0;
+    border-radius: 19%;
+    margin: 7px 2px;
+    height: 286px;
+}
+.contact{
+    background: rgb(198 205 210 / 88%);
+    height: 683px;
+}
+.text-center{
+    text-align: center;
+    padding-top: 30px;
+    font-family: sans-serif;
+    font-size: 34px;
+}
+.form{
+    max-width: 62%;
+    margin:25px auto;
+
+}
+.form-input{
+    padding: 5px 3px;
+    margin: 14px 0;
+    width: 100%;
+    font-size: 19px;
+    /* input ke andar ka content ko bada dekhne keliye */
+    border: 2px solid grey;
+    border-radius: 6px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+.text-footer{
+    text-align: center;
+    padding:20px 0px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 3px 3px;
+}
+@media only screen and (max-width:903px){
+    .navlist{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        height: 400px;
+        transition: all 0.9s ease-out;
+    }
+    .rightnav{
+        justify-content: left;
+        display: flex;
+        width: 55%;
+        text-align: center;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .rightnav input{
+        height: 17px;
+    }
+    .btn-sm{
+        margin: 1px -3px;;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 72px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+    .section{
+        flex-direction: column-reverse;
+    }
+    .text-small{
+        text-align: center;
+    }
+    .text-big{
+        text-align: center;
+    }
+    .buttons{
+        text-align: center;
+    }
+    .secondhalf img{
+        width: 50%;
+    } 
+    .logo{
+        margin: 0px 26p
+    }
+    .paras{
+        padding: 0px;
+    }
+}
